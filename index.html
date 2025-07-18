@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservá tu Turno</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Reservá tu Turno</h1>
+    <form id="turno-form" method="POST" action="https://script.google.com/macros/s/AKfycbwe3KtS6BlLILPAmrHA05bynpDEtGOlh4sc2ydQ_CmUk8ryjF9ymJ8_RlHECEUQ4sUUtg/exec">
+      <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required />
+      <input type="text" name="celular" id="celular" placeholder="Tu celular" required />
+      <select name="dia" id="dia" required>
+        <option value="">Cargando días...</option>
+      </select>
+      <select name="hora" id="hora" required>
+        <option value="">Seleccioná un día primero</option>
+      </select>
+      <button type="submit">Reservar Turno</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
